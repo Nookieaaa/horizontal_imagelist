@@ -25,6 +25,7 @@ public class ImageListAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ContextHolder contextHolder = ContextHolder.getInstance();
         return null;
     }
 

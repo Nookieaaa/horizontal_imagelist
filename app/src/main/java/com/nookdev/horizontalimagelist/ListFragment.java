@@ -38,6 +38,7 @@ public class ListFragment extends Fragment{
         recyclerView.setLayoutManager(llm);
         recyclerView.setAdapter(new ImageListAdapter());
 
+
         return rootView;
     }
 
