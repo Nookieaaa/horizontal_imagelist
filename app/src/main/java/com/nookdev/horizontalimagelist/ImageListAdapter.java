@@ -1,6 +1,5 @@
 package com.nookdev.horizontalimagelist;
 
-import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,7 +16,6 @@ import java.util.List;
 public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.ViewHolder> {
 
     List<Bitmap> bitmaps;
-    Context context;
 
 
     public ImageListAdapter(){
@@ -29,6 +27,12 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.View
         ViewHolder(View itemView){
             super(itemView);
             iv = (ImageView)itemView.findViewById(R.id.image);
+            iv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int s = 0;
+                }
+            });
         }
 
     }
